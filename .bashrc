@@ -9,7 +9,6 @@ cyn="\e[1;36m"          # Cyan
 wht="\e[1;37m"          # White
 clr="\e[0m"             # Reset
 
-
 # Colored Background Codes!
 blkbg="\e[1;40m"                # Black
 redbg="\e[1;41m"                # Red
@@ -29,4 +28,9 @@ reload() { source ~/.bashrc ~/.bashrc.cgottwaldt; };
 
 # set
 alias gcm='git commit -m'
+
+# PS1 is the shell prompt... let's customize it :p
+# /w
+PS1="${blu}\d \A ${grn}(*^ - ^) ${wht}\h > ${blu}\w $ ${clr}"
+
 
