@@ -1,12 +1,25 @@
-blk='\[\033[01;30m\]'   # Black
-red='\[\033[01;31m\]'   # Red
-grn='\[\033[01;32m\]'   # Green
-ylw='\[\033[01;33m\]'   # Yellow
-blu='\[\033[01;34m\]'   # Blue
-pur='\[\033[01;35m\]'   # Purple
-cyn='\[\033[01;36m\]'   # Cyan
-wht='\[\033[01;37m\]'   # White
-clr='\[\033[00m\]'      # Reset
+# Colored Text Codes!
+blk="\e[1;30m"          # Black
+red="\e[1;31m"          # Red
+grn="\e[1;32m"          # Green
+ylw="\e[1;33m"          # Yellow
+blu="\e[1;34m"          # Blue
+mag="\e[1;35m"          # Magenta
+cyn="\e[1;36m"          # Cyan
+wht="\e[1;37m"          # White
+clr="\e[0m"             # Reset
+
+
+# Colored Background Codes!
+blkbg="\e[1;40m"                # Black
+redbg="\e[1;41m"                # Red
+grnbg="\e[1;42m"                # Green
+ylwbg="\e[1;43m"                # Yellow
+blubg="\e[1;44m"                # Blue
+magbg="\e[1;45m"                # Magenta
+cynbg="\e[1;46m"                # Cyan
+whtbg="\e[1;47m"                # White
+clrbg="\e[0m"           # Reset
 
 # go up a directory without needing to specify cd
 alias ..='cd ..'
