@@ -4,7 +4,7 @@ red="\e[1;31m"          # Red
 grn="\e[1;32m"          # Green
 ylw="\e[1;33m"          # Yellow
 blu="\e[1;34m"          # Blue
-mag="\e[1;35m"          # Magenta
+pur="\e[1;35m"          # Purple
 cyn="\e[1;36m"          # Cyan
 wht="\e[1;37m"          # White
 clr="\e[0m"             # Reset
@@ -23,6 +23,14 @@ clrbg="\e[0m"           # Reset
 # go up a directory without needing to specify cd
 alias ..='cd ..'
 
+# prompt before removals/overwrites
+alias rm='rm -i'
+alias cp='cp -i'
+
+# make grep colored!
+export GREP_COLOR="00;34"
+alias grep='grep --color=tty'
+
 # refresh .bashrc changes
 reload() { source ~/.bashrc ~/.bashrc.cgottwaldt; };
 
@@ -31,6 +39,6 @@ alias gcm='git commit -m'
 
 # PS1 is the shell prompt... let's customize it :p
 # /w
-PS1="${blu}\d \A ${grn}(*^ - ^) ${wht}\h > ${blu}\w $ ${clr}"
+PS1="\[${pur}\]\d \[${blu}\]\A \[${grn}\](*^ - ^) \[${wht}\]\h > \[${blu}\]\w $ \[${clr}\]"
 
 
